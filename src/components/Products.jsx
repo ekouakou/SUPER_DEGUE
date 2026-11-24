@@ -1,28 +1,29 @@
 import useReveal from '../hooks/useReveal'
+import { asset } from '../lib/asset'
 import './Products.css'
 
 const PRODUCTS = [
   {
     name: 'Nature',
-    image: '/images/products/nature.svg',
+    image: asset('images/products/nature.svg'),
     desc: 'Le grand classique : lait fermenté et mil pilé, sans sucre ajouté.',
     tag: 'Best-seller',
   },
   {
     name: 'Mangue',
-    image: '/images/products/mangue.svg',
+    image: asset('images/products/mangue.svg'),
     desc: 'Pulpe de mangue locale pour une touche solaire et gourmande.',
     tag: 'Fruité',
   },
   {
     name: 'Bissap-Fraise',
-    image: '/images/products/bissap-fraise.svg',
+    image: asset('images/products/bissap-fraise.svg'),
     desc: "L'acidité du bissap rencontre la douceur de la fraise.",
     tag: 'Nouveauté',
   },
   {
     name: 'Vanille-Baobab',
-    image: '/images/products/vanille-baobab.svg',
+    image: asset('images/products/vanille-baobab.svg'),
     desc: 'Pulpe de baobab et vanille de Madagascar, riche en vitamine C.',
     tag: 'Énergie',
   },

@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 import './Footer.css'
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#top" className="logo logo--footer">
-            <img className="logo__mark" src="/logo.svg" alt="" aria-hidden="true" />
+            <img className="logo__mark" src={asset('logo.svg')} alt="" aria-hidden="true" />
             Super Déguè de Djéni
           </a>
           <p>

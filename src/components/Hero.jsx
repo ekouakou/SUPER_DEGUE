@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 import './Hero.css'
 
 function Hero() {
@@ -45,7 +46,7 @@ function Hero() {
         <div className="hero__visual">
           <img
             className="hero__image"
-            src="/images/products/hero-collection.svg"
+            src={asset('images/products/hero-collection.svg')}
             alt="Gamme de produits Super Déguè de Djéni"
           />
         </div>

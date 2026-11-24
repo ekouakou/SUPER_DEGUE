@@ -1,4 +1,5 @@
 import useReveal from '../hooks/useReveal'
+import { asset } from '../lib/asset'
 import './Story.css'
 
 function Story() {
@@ -10,7 +11,7 @@ function Story() {
         <div className="story__visual">
           <img
             className="story__image"
-            src="/images/story-illustration.svg"
+            src={asset('images/story-illustration.svg')}
             alt="Bol de dégué crémeux avec lait frais et mil pilé"
           />
         </div>

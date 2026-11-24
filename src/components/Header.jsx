@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { asset } from '../lib/asset'
 import './Header.css'
 
 const NAV_LINKS = [
@@ -24,7 +25,7 @@ function Header() {
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container site-header__inner">
         <a href="#top" className="logo" onClick={() => setOpen(false)}>
-          <img className="logo__mark" src="/logo.svg" alt="" aria-hidden="true" />
+          <img className="logo__mark" src={asset('logo.svg')} alt="" aria-hidden="true" />
           Super Déguè de Djéni
         </a>
 
