@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <g transform="translate(40 60) scale(0.85)">
+    <ellipse cx="200" cy="70" rx="135" ry="28" fill="#e8732c"/>
+    <path d="M65 78 Q65 66 76 66 H324 Q335 66 335 78 V330 C335 395 275 430 200 430 C125 430 65 395 65 330 Z" fill="#f7e8c8"/>
+    <text x="200" y="54" font-size="42" text-anchor="middle">🌾</text>
+    <text x="200" y="280" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="32" fill="#2b2420" text-anchor="middle">NATURE</text>
+  </g>
+  <g transform="translate(320 0) scale(1)">
+    <ellipse cx="200" cy="70" rx="140" ry="30" fill="#1f7a44"/>
+    <path d="M60 80 Q60 68 72 68 H328 Q340 68 340 80 V340 C340 410 280 450 200 450 C120 450 60 410 60 340 Z" fill="#f6b93b"/>
+    <ellipse cx="130" cy="190" rx="22" ry="80" fill="#ffffff" opacity="0.3" transform="rotate(-10 130 190)"/>
+    <text x="200" y="56" font-size="48" text-anchor="middle">🥭</text>
+    <text x="200" y="300" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="38" fill="#ffffff" text-anchor="middle">MANGUE</text>
+  </g>
+  <g transform="translate(610 70) scale(0.85)">
+    <ellipse cx="200" cy="70" rx="135" ry="28" fill="#fde6cf"/>
+    <path d="M65 78 Q65 66 76 66 H324 Q335 66 335 78 V330 C335 395 275 430 200 430 C125 430 65 395 65 330 Z" fill="#e13c2e"/>
+    <text x="200" y="54" font-size="40" text-anchor="middle">🍓</text>
+    <text x="200" y="260" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#ffffff" text-anchor="middle">BISSAP</text>
+    <text x="200" y="290" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#ffffff" text-anchor="middle">FRAISE</text>
+  </g>
+</svg>

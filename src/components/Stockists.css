@@ -1,0 +1,89 @@
+.stockists {
+  background: var(--green-light);
+}
+
+.stockists__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+.stockists__text p {
+  margin: 16px 0 28px;
+  max-width: 480px;
+}
+
+.stockists__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stockists__list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.stockists__dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--pink);
+  flex-shrink: 0;
+}
+
+.stockists__list strong {
+  font-family: var(--font-heading);
+  font-size: 16px;
+}
+
+.stockists__list p {
+  font-size: 14px;
+  margin: 2px 0 0;
+}
+
+.stockists__card {
+  background: linear-gradient(145deg, var(--green), var(--green-dark));
+  border-radius: 24px;
+  padding: 40px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stockists__card:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 24px 40px rgba(15, 74, 40, 0.3);
+}
+
+.stockists__card h3 {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.stockists__card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.stockists__card .btn-primary {
+  align-self: flex-start;
+  background: var(--white);
+  color: var(--green-dark);
+  box-shadow: none;
+}
+
+.stockists__card .btn-primary:hover {
+  background: var(--cream);
+}
+
+@media (max-width: 920px) {
+  .stockists__inner {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,245 @@
+:root {
+  --cream: #fff8ec;
+  --cream-dark: #f7e8c8;
+  --pink: #e8732c;
+  --pink-dark: #c0501a;
+  --pink-light: #fde6cf;
+  --yellow: #f6b93b;
+  --green: #1f7a44;
+  --green-dark: #0f4a28;
+  --green-light: #e3f3ea;
+  --red: #e13c2e;
+  --ink: #2b2420;
+  --ink-soft: #6b5d55;
+  --white: #ffffff;
+
+  --pink-light-deep: #fad7ae;
+  --green-light-deep: #cce8d8;
+  --gray-light: #eceef0;
+  --gray-light-deep: #dde0e3;
+  --gray-section-light: #f6f7f8;
+  --gray-dark: #51575c;
+
+  --font-heading: 'Fredoka', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+
+  --shadow-soft: 0 12px 30px rgba(43, 36, 32, 0.08);
+  --shadow-strong: 0 20px 40px rgba(15, 74, 40, 0.25);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pink-dark);
+  background: var(--pink-light);
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+/* Eyebrow badge follows the tone of its section's background, a shade deeper. */
+.hero .eyebrow {
+  background: var(--pink-light-deep);
+  color: var(--pink-dark);
+}
+
+.benefits .eyebrow,
+.stockists .eyebrow {
+  background: var(--green-light-deep);
+  color: var(--green-dark);
+}
+
+.products .eyebrow,
+.testimonials .eyebrow {
+  background: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+.story .eyebrow {
+  background: var(--gray-light-deep);
+  color: var(--gray-dark);
+}
+
+.section-head {
+  max-width: 640px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 30px;
+  border-radius: 999px;
+  border: none;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.35s ease, background 0.35s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.035);
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.btn-primary {
+  background: var(--pink);
+  color: var(--white);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-primary:hover {
+  background: var(--pink-dark);
+}
+
+.btn-ghost {
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-ghost:hover {
+  background: var(--cream-dark);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: var(--white);
+  box-shadow: 0 16px 32px rgba(15, 74, 40, 0.3);
+}
+
+.btn-accent:hover {
+  filter: brightness(1.08);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Scroll-reveal: wrap a section's content in .reveal-group, toggle
+   .is-visible via useReveal(); direct children stagger in automatically. */
+.reveal-group > * {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-group.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-group > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-group > *:nth-child(2) { transition-delay: 90ms; }
+.reveal-group > *:nth-child(3) { transition-delay: 180ms; }
+.reveal-group > *:nth-child(4) { transition-delay: 270ms; }
+.reveal-group > *:nth-child(5) { transition-delay: 360ms; }
+.reveal-group > *:nth-child(6) { transition-delay: 450ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-group > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
